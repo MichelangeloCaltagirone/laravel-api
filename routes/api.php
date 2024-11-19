@@ -23,5 +23,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get("/projects", [ProjectController::class, "index"])->name("api.projects.index");
+//Route::delete("/projects/{id}", [ProjectController::class, "destroy"])->name("api.projects.delete");
+
 Route::get("/categories", [CategoryController::class, "index"])->name("api.categories.index");
 
